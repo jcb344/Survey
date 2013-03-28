@@ -1,0 +1,410 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F1F27B1A16E45062009C5197 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F27B1916E45062009C5197 /* UIKit.framework */; };
+		F1F27B1C16E45062009C5197 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F27B1B16E45062009C5197 /* Foundation.framework */; };
+		F1F27B1E16E45062009C5197 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F27B1D16E45062009C5197 /* CoreGraphics.framework */; };
+		F1F27B2416E45062009C5197 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F1F27B2216E45062009C5197 /* InfoPlist.strings */; };
+		F1F27B2616E45062009C5197 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F27B2516E45062009C5197 /* main.m */; };
+		F1F27B2A16E45062009C5197 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F27B2916E45062009C5197 /* AppDelegate.m */; };
+		F1F27B2C16E45062009C5197 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F1F27B2B16E45062009C5197 /* Default.png */; };
+		F1F27B2E16E45062009C5197 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F1F27B2D16E45062009C5197 /* Default@2x.png */; };
+		F1F27B3016E45062009C5197 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F1F27B2F16E45062009C5197 /* Default-568h@2x.png */; };
+		F1F27B3316E45062009C5197 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1F27B3116E45062009C5197 /* MainStoryboard.storyboard */; };
+		F1F27B3616E45062009C5197 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F27B3516E45062009C5197 /* ViewController.m */; };
+		F1F27B3E16E45128009C5197 /* SurveyItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F27B3D16E45128009C5197 /* SurveyItem.m */; };
+		F1F27B4416E45210009C5197 /* surveyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1F27B4316E45210009C5197 /* surveyView.xib */; };
+		F1F27B4716E4559F009C5197 /* SINumberQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F27B4616E4559F009C5197 /* SINumberQuestion.m */; };
+		F1F27B4916E45683009C5197 /* SINumberQuestionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1F27B4816E45683009C5197 /* SINumberQuestionView.xib */; };
+		F1F27B4E16E458C5009C5197 /* SIShortAnswer.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F27B4D16E458C5009C5197 /* SIShortAnswer.m */; };
+		F1F27B5016E458D3009C5197 /* SIShortAnswerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1F27B4F16E458D3009C5197 /* SIShortAnswerView.xib */; };
+		F1F27B5416E45EBC009C5197 /* SITime.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F27B5316E45EBC009C5197 /* SITime.m */; };
+		F1F27B5616E45EDA009C5197 /* SITimeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1F27B5516E45EDA009C5197 /* SITimeView.xib */; };
+		F1F27B5A16E462D3009C5197 /* SIMultipleChoice.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F27B5916E462D3009C5197 /* SIMultipleChoice.m */; };
+		F1F27B5C16E462ED009C5197 /* SIMultipleChioceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1F27B5B16E462ED009C5197 /* SIMultipleChioceView.xib */; };
+		F1F27B5F16E46626009C5197 /* SurveyQuestions.plist in Resources */ = {isa = PBXBuildFile; fileRef = F1F27B5E16E46626009C5197 /* SurveyQuestions.plist */; };
+		F1F6D76716E47D4D006AEB7C /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F6D76616E47D4D006AEB7C /* MessageUI.framework */; };
+		F1F8550E1704BEC000389085 /* GAZZCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F8550D1704BEC000389085 /* GAZZCloud.m */; };
+		F1F855151704CF6700389085 /* test.plist in Resources */ = {isa = PBXBuildFile; fileRef = F1F855141704CF6700389085 /* test.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F1F27B1516E45062009C5197 /* Survey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Survey.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1F27B1916E45062009C5197 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F1F27B1B16E45062009C5197 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F1F27B1D16E45062009C5197 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F1F27B2116E45062009C5197 /* Survey-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Survey-Info.plist"; sourceTree = "<group>"; };
+		F1F27B2316E45062009C5197 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F1F27B2516E45062009C5197 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F1F27B2716E45062009C5197 /* Survey-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Survey-Prefix.pch"; sourceTree = "<group>"; };
+		F1F27B2816E45062009C5197 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F1F27B2916E45062009C5197 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F1F27B2B16E45062009C5197 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		F1F27B2D16E45062009C5197 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		F1F27B2F16E45062009C5197 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		F1F27B3216E45062009C5197 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		F1F27B3416E45062009C5197 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F1F27B3516E45062009C5197 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F1F27B3C16E45128009C5197 /* SurveyItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SurveyItem.h; sourceTree = "<group>"; };
+		F1F27B3D16E45128009C5197 /* SurveyItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SurveyItem.m; sourceTree = "<group>"; };
+		F1F27B4316E45210009C5197 /* surveyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = surveyView.xib; sourceTree = "<group>"; };
+		F1F27B4516E4559F009C5197 /* SINumberQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SINumberQuestion.h; sourceTree = "<group>"; };
+		F1F27B4616E4559F009C5197 /* SINumberQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SINumberQuestion.m; sourceTree = "<group>"; };
+		F1F27B4816E45683009C5197 /* SINumberQuestionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SINumberQuestionView.xib; sourceTree = "<group>"; };
+		F1F27B4C16E458C5009C5197 /* SIShortAnswer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIShortAnswer.h; sourceTree = "<group>"; };
+		F1F27B4D16E458C5009C5197 /* SIShortAnswer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIShortAnswer.m; sourceTree = "<group>"; };
+		F1F27B4F16E458D3009C5197 /* SIShortAnswerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SIShortAnswerView.xib; sourceTree = "<group>"; };
+		F1F27B5216E45EBC009C5197 /* SITime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SITime.h; path = ../SITime.h; sourceTree = "<group>"; };
+		F1F27B5316E45EBC009C5197 /* SITime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SITime.m; path = ../SITime.m; sourceTree = "<group>"; };
+		F1F27B5516E45EDA009C5197 /* SITimeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SITimeView.xib; sourceTree = "<group>"; };
+		F1F27B5816E462D3009C5197 /* SIMultipleChoice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIMultipleChoice.h; sourceTree = "<group>"; };
+		F1F27B5916E462D3009C5197 /* SIMultipleChoice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIMultipleChoice.m; sourceTree = "<group>"; };
+		F1F27B5B16E462ED009C5197 /* SIMultipleChioceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SIMultipleChioceView.xib; sourceTree = "<group>"; };
+		F1F27B5E16E46626009C5197 /* SurveyQuestions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SurveyQuestions.plist; sourceTree = "<group>"; };
+		F1F6D76616E47D4D006AEB7C /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		F1F8550C1704BEC000389085 /* GAZZCloud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAZZCloud.h; sourceTree = "<group>"; };
+		F1F8550D1704BEC000389085 /* GAZZCloud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAZZCloud.m; sourceTree = "<group>"; };
+		F1F855141704CF6700389085 /* test.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = test.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F1F27B1216E45062009C5197 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1F6D76716E47D4D006AEB7C /* MessageUI.framework in Frameworks */,
+				F1F27B1A16E45062009C5197 /* UIKit.framework in Frameworks */,
+				F1F27B1C16E45062009C5197 /* Foundation.framework in Frameworks */,
+				F1F27B1E16E45062009C5197 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F1F27B0A16E45062009C5197 = {
+			isa = PBXGroup;
+			children = (
+				F1F27B1F16E45062009C5197 /* Survey */,
+				F1F27B1816E45062009C5197 /* Frameworks */,
+				F1F27B1616E45062009C5197 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F1F27B1616E45062009C5197 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1F27B1516E45062009C5197 /* Survey.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1F27B1816E45062009C5197 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F1F6D76616E47D4D006AEB7C /* MessageUI.framework */,
+				F1F27B1916E45062009C5197 /* UIKit.framework */,
+				F1F27B1B16E45062009C5197 /* Foundation.framework */,
+				F1F27B1D16E45062009C5197 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F1F27B1F16E45062009C5197 /* Survey */ = {
+			isa = PBXGroup;
+			children = (
+				F1F27B2816E45062009C5197 /* AppDelegate.h */,
+				F1F27B2916E45062009C5197 /* AppDelegate.m */,
+				F1F27B4B16E4588B009C5197 /* Survey Items */,
+				F1F27B3116E45062009C5197 /* MainStoryboard.storyboard */,
+				F1F27B3416E45062009C5197 /* ViewController.h */,
+				F1F27B3516E45062009C5197 /* ViewController.m */,
+				F1F27B5E16E46626009C5197 /* SurveyQuestions.plist */,
+				F1F855141704CF6700389085 /* test.plist */,
+				F1F27B2016E45062009C5197 /* Supporting Files */,
+			);
+			path = Survey;
+			sourceTree = "<group>";
+		};
+		F1F27B2016E45062009C5197 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F1F8550C1704BEC000389085 /* GAZZCloud.h */,
+				F1F8550D1704BEC000389085 /* GAZZCloud.m */,
+				F1F27B2116E45062009C5197 /* Survey-Info.plist */,
+				F1F27B2216E45062009C5197 /* InfoPlist.strings */,
+				F1F27B2516E45062009C5197 /* main.m */,
+				F1F27B2716E45062009C5197 /* Survey-Prefix.pch */,
+				F1F27B2B16E45062009C5197 /* Default.png */,
+				F1F27B2D16E45062009C5197 /* Default@2x.png */,
+				F1F27B2F16E45062009C5197 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F1F27B4A16E45876009C5197 /* Number Question */ = {
+			isa = PBXGroup;
+			children = (
+				F1F27B4516E4559F009C5197 /* SINumberQuestion.h */,
+				F1F27B4616E4559F009C5197 /* SINumberQuestion.m */,
+				F1F27B4816E45683009C5197 /* SINumberQuestionView.xib */,
+			);
+			name = "Number Question";
+			sourceTree = "<group>";
+		};
+		F1F27B4B16E4588B009C5197 /* Survey Items */ = {
+			isa = PBXGroup;
+			children = (
+				F1F27B3C16E45128009C5197 /* SurveyItem.h */,
+				F1F27B3D16E45128009C5197 /* SurveyItem.m */,
+				F1F27B4316E45210009C5197 /* surveyView.xib */,
+				F1F27B5D16E46501009C5197 /* Multiple Choice */,
+				F1F27B5716E462AE009C5197 /* Time */,
+				F1F27B5116E459DE009C5197 /* Short Answer */,
+				F1F27B4A16E45876009C5197 /* Number Question */,
+			);
+			name = "Survey Items";
+			sourceTree = "<group>";
+		};
+		F1F27B5116E459DE009C5197 /* Short Answer */ = {
+			isa = PBXGroup;
+			children = (
+				F1F27B4C16E458C5009C5197 /* SIShortAnswer.h */,
+				F1F27B4D16E458C5009C5197 /* SIShortAnswer.m */,
+				F1F27B4F16E458D3009C5197 /* SIShortAnswerView.xib */,
+			);
+			name = "Short Answer";
+			sourceTree = "<group>";
+		};
+		F1F27B5716E462AE009C5197 /* Time */ = {
+			isa = PBXGroup;
+			children = (
+				F1F27B5216E45EBC009C5197 /* SITime.h */,
+				F1F27B5316E45EBC009C5197 /* SITime.m */,
+				F1F27B5516E45EDA009C5197 /* SITimeView.xib */,
+			);
+			name = Time;
+			sourceTree = "<group>";
+		};
+		F1F27B5D16E46501009C5197 /* Multiple Choice */ = {
+			isa = PBXGroup;
+			children = (
+				F1F27B5816E462D3009C5197 /* SIMultipleChoice.h */,
+				F1F27B5916E462D3009C5197 /* SIMultipleChoice.m */,
+				F1F27B5B16E462ED009C5197 /* SIMultipleChioceView.xib */,
+			);
+			name = "Multiple Choice";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F1F27B1416E45062009C5197 /* Survey */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1F27B3916E45062009C5197 /* Build configuration list for PBXNativeTarget "Survey" */;
+			buildPhases = (
+				F1F27B1116E45062009C5197 /* Sources */,
+				F1F27B1216E45062009C5197 /* Frameworks */,
+				F1F27B1316E45062009C5197 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Survey;
+			productName = Survey;
+			productReference = F1F27B1516E45062009C5197 /* Survey.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F1F27B0C16E45062009C5197 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Jacob Balthazor";
+			};
+			buildConfigurationList = F1F27B0F16E45062009C5197 /* Build configuration list for PBXProject "Survey" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F1F27B0A16E45062009C5197;
+			productRefGroup = F1F27B1616E45062009C5197 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F1F27B1416E45062009C5197 /* Survey */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F1F27B1316E45062009C5197 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1F27B2416E45062009C5197 /* InfoPlist.strings in Resources */,
+				F1F27B2C16E45062009C5197 /* Default.png in Resources */,
+				F1F27B2E16E45062009C5197 /* Default@2x.png in Resources */,
+				F1F27B3016E45062009C5197 /* Default-568h@2x.png in Resources */,
+				F1F27B3316E45062009C5197 /* MainStoryboard.storyboard in Resources */,
+				F1F27B4416E45210009C5197 /* surveyView.xib in Resources */,
+				F1F27B4916E45683009C5197 /* SINumberQuestionView.xib in Resources */,
+				F1F27B5016E458D3009C5197 /* SIShortAnswerView.xib in Resources */,
+				F1F27B5616E45EDA009C5197 /* SITimeView.xib in Resources */,
+				F1F27B5C16E462ED009C5197 /* SIMultipleChioceView.xib in Resources */,
+				F1F27B5F16E46626009C5197 /* SurveyQuestions.plist in Resources */,
+				F1F855151704CF6700389085 /* test.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F1F27B1116E45062009C5197 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1F27B2616E45062009C5197 /* main.m in Sources */,
+				F1F27B2A16E45062009C5197 /* AppDelegate.m in Sources */,
+				F1F27B3616E45062009C5197 /* ViewController.m in Sources */,
+				F1F27B3E16E45128009C5197 /* SurveyItem.m in Sources */,
+				F1F27B4716E4559F009C5197 /* SINumberQuestion.m in Sources */,
+				F1F27B4E16E458C5009C5197 /* SIShortAnswer.m in Sources */,
+				F1F27B5416E45EBC009C5197 /* SITime.m in Sources */,
+				F1F27B5A16E462D3009C5197 /* SIMultipleChoice.m in Sources */,
+				F1F8550E1704BEC000389085 /* GAZZCloud.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F1F27B2216E45062009C5197 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1F27B2316E45062009C5197 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F1F27B3116E45062009C5197 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1F27B3216E45062009C5197 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F1F27B3716E45062009C5197 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F1F27B3816E45062009C5197 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F1F27B3A16E45062009C5197 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Survey/Survey-Prefix.pch";
+				INFOPLIST_FILE = "Survey/Survey-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F1F27B3B16E45062009C5197 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Survey/Survey-Prefix.pch";
+				INFOPLIST_FILE = "Survey/Survey-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F1F27B0F16E45062009C5197 /* Build configuration list for PBXProject "Survey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1F27B3716E45062009C5197 /* Debug */,
+				F1F27B3816E45062009C5197 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1F27B3916E45062009C5197 /* Build configuration list for PBXNativeTarget "Survey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1F27B3A16E45062009C5197 /* Debug */,
+				F1F27B3B16E45062009C5197 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F1F27B0C16E45062009C5197 /* Project object */;
+}

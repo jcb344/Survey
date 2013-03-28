@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DirectionsPromt</key>
+	<string>flklskad</string>
+	<key>Questions</key>
+	<array>
+		<dict>
+			<key>choices</key>
+			<array>
+				<string>asfdsa</string>
+				<string>sd</string>
+				<string>sdf</string>
+				<string>sdffr</string>
+			</array>
+			<key>prompt</key>
+			<string>asdlkalks</string>
+			<key>type</key>
+			<string>multipleAnswer</string>
+		</dict>
+		<dict>
+			<key>prompt</key>
+			<string>Number</string>
+			<key>type</key>
+			<string>numberAnswer</string>
+		</dict>
+		<dict>
+			<key>prompt</key>
+			<string>time</string>
+			<key>type</key>
+			<string>time</string>
+		</dict>
+	</array>
+	<key>surveyID</key>
+	<string>DAT</string>
+</dict>
+</plist>
