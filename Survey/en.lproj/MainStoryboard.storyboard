@@ -174,28 +174,6 @@
             <point key="canvasLocation" x="58" y="116"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="ViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="clearSavedData"/>
-                <relationship kind="action" name="done:"/>
-                <relationship kind="action" name="saveIDsPressed:"/>
-                <relationship kind="action" name="submitAction:"/>
-                <relationship kind="action" name="unlockButtonPressedDown:"/>
-                <relationship kind="action" name="unlockButtonPressedUp:"/>
-                <relationship kind="outlet" name="DirectionsView" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="keyboardUppButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="scroll" candidateClass="UIScrollView"/>
-                <relationship kind="outlet" name="sendButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="setupView" candidateClass="UIView"/>
-                <relationship kind="outlet" name="studyField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="subjectField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="unlockButton1" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="unlockButton2" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

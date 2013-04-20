@@ -48,30 +48,37 @@
     if (cloud == Nil) {
         cloud = [[GAZZCloud alloc] init];
     }
-    NSMutableArray *data = [NSMutableArray array];
-    NSDate *date = [[NSDate alloc] init];
-    double t = [date timeIntervalSince1970];
-    [date release];
-    int tt = t;
-    NSNumber *timeStamp = [NSNumber numberWithDouble:t];
-    for (int i = 0; i<[questions count]; i++) {
-        NSDictionary *record = [NSDictionary dictionaryWithObjectsAndKeys:[[questions objectAtIndex:i] getPrompt],@"prompt",[[questions objectAtIndex:i] GetResult],@"answer",timeStamp,@"timeStamp",surveyID,@"surveyID", nil];
-        [data addObject:record];
-        NSLog(@"%f %f",t,[[record objectForKey:@"timeStamp"] floatValue]);
-    }
-    [timeStamp release];
-    timeStamp = nil;
-    if (savedAnswers == nil) {
-        savedAnswers = data;
+    if ([[subjectField text] length] >0 && [[studyField text] length] >0 ) {
+        NSMutableArray *data = [NSMutableArray array];
+        NSDate *date = [[NSDate alloc] init];
+        double t = [date timeIntervalSince1970];
+        [date release];
+        int tt = t;
+        NSNumber *timeStamp = [NSNumber numberWithDouble:t];
+        for (int i = 0; i<[questions count]; i++) {
+            NSDictionary *record = [NSDictionary dictionaryWithObjectsAndKeys:[[questions objectAtIndex:i] getPrompt],@"prompt",[[questions objectAtIndex:i] GetResult],@"answer",timeStamp,@"timeStamp",surveyID,@"surveyID", nil];
+            [data addObject:record];
+            NSLog(@"%f %f",t,[[record objectForKey:@"timeStamp"] floatValue]);
+        }
+        [timeStamp release];
+        timeStamp = nil;
+        if (savedAnswers == nil) {
+            savedAnswers = data;
+        }
+        else{
+            [savedAnswers addObjectsFromArray:data];
+        }
+        [self saveFile];
+        
+        [cloud setStudyID:[studyField text] ];
+        [cloud setSubjectID:[subjectField text]];
+        [cloud postJSONOf:savedAnswers toAdress:@"https://pulvinar.cin.ucsf.edu"];
     }
     else{
-        [savedAnswers addObjectsFromArray:data];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No IDs" message:@"Please enter the subject an study IDs" delegate:Nil cancelButtonTitle:@"OK" otherButtonTitles:nil ];
+        [alert show];
     }
-    [self saveFile];
     
-    [cloud setStudyID:[studyField text] ];
-    [cloud setSubjectID:[subjectField text]];
-    [cloud postJSONOf:savedAnswers toAdress:@"http://cerebrum.ucsf.edu/datapost"];
 
     
     /* old email way
@@ -207,8 +214,9 @@
     
     [file setObject:[subjectField text] forKey:@"subjectID"];
     [file setObject:[studyField text] forKey:@"studyID"];
-    [file setObject:savedAnswers forKey:@"data"];
-    
+    if (savedAnswers != nil) {
+         [file setObject:savedAnswers forKey:@"data"];
+    }
     
     [file writeToFile:[self dataFilePath] atomically:NO];
     [file release];

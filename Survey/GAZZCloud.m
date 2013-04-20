@@ -67,12 +67,16 @@
             NSLog(@"Error statusCode %i", statusCode);
         }
         else if (statusCode == 200){
+            
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Data Sent" message:@"Data has been successfully uplaoded" delegate:Nil cancelButtonTitle:@"OK" otherButtonTitles:nil ];
             [alert show];
+             
         }
         else{
+            /*
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"HTTP Response Code" message:[NSString stringWithFormat:@"%d",statusCode] delegate:Nil cancelButtonTitle:@"Done" otherButtonTitles:nil ];
             [alert show];
+             */
         }
         
         NSLog(@"http status code %d",statusCode);

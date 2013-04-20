@@ -10,12 +10,6 @@
 	<array>
 		<dict>
 			<key>type</key>
-			<string>numberAnswer</string>
-			<key>prompt</key>
-			<string>What is your participant number?</string>
-		</dict>
-		<dict>
-			<key>type</key>
 			<string>time</string>
 			<key>prompt</key>
 			<string>What time did you go to bed last night?</string>
